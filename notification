@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Notification</title>
+    <script src="https://kit.fontawesome.com/90986f56fb.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f8ff;
+            font-family: 'Poppins', sans-serif;
+        }
+        .notification-box {
+            display: flex;
+            align-items: center;
+            background-color: #e0eff7;
+            padding: 15px 30px;
+            border-radius: 10px;
+            width: 500px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            justify-content: space-between;
+            border: 1px solid #0160a0; /* Thin border */
+        }
+        .section {
+            display: flex;
+            align-items: center;
+            gap: 10px; /* Icon aur text ke beech proper spacing */
+        }
+        .icon {
+            font-size: 18px;
+            color: #0a66c2;
+        }
+        .text-box {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+        }
+        .text {
+            font-size: 14px;
+            color: black;
+        }
+        .bold {
+            font-size: 16px;
+            font-weight: bold;
+            color: #0a66c2;
+        }
+        .arrow {
+            font-size: 50px;
+            margin: 0 0px;
+            color: #0160a0;
+        }
+    </style>
+</head>
+<body>
+    <div class="notification-box">
+        <div class="section">
+            <i class="fa-regular fa-clock icon"></i>
+            <div class="text-box">
+                <span class="text">Order</span>
+                <span class="bold">Today</span>
+            </div>
+        </div>
+        <span class="arrow">→</span>
+        <div class="section">
+            <i class="fa-solid fa-calendar-check icon"></i>
+            <div class="text-box">
+                <span class="text">Arrives</span>
+                <span class="bold">6 days from now</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
